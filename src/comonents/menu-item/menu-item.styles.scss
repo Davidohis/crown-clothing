@@ -1,68 +1,75 @@
-.menu-item {
-    min-width: 30%;
-    height: 240px;
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin: 0 7.5px 15px;
-    overflow: hidden;
+.single-banner {
+  position: relative;
+  z-index: 1;
+  min-width: 25%;
+  height: 210px;
+  display: flex;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px 15px;
+  overflow: hidden;
+
   
-    &:hover {
-      cursor: pointer;
-  
-      & .background-image {
-        transform: scale(1.1);
-        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-      }
-  
-      & .content {
-        opacity: 0.9;
-      }
-    }
-  
-    &.large {
-      height: 380px;
-    }
-  
-    &:first-child {
-      margin-right: 7.5px;
-    }
-  
-    &:last-child {
-      margin-left: 7.5px;
-    }
-  
-    .background-image {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .content {
-      height: 90px;
-      padding: 0 25px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid black;
-      background-color: white;
-      opacity: 0.7;
-      position: absolute;
-  
-      .title {
-        font-weight: bold;
-        margin: 0 6px 0;
-        font-size: 22px;
-        color: #4a4a4a;
-      }
-  
-      .subtitle {
-        font-weight: lighter;
-        font-size: 16px;
-      }
-    }
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
   }
+}
+
+.single-banner:hover::before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.single-banner::before {
+  position: absolute;
+  left: 35px;
+  top: 30px;
+  border: 13px solid #ffffff;
+  content: "";
+  opacity: 0.3;
+  width: calc(100% - 70px);
+  height: calc(100% - 60px);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.single-banner img {
+  min-width: 100%;
+}
+
+.single-banner .inner-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  transition: all 0.2s linear;
+}
+
+.inner-text h4 {
+  color: #252525;
+  font-weight: 600;
+  padding: 11px 28px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+

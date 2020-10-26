@@ -1,7 +1,5 @@
 import React from 'react';
-
 import MenuItem from '../menu-item/menu-item.comonent';
-
 import './directory.styles.scss';
 
 class Directory extends React.Component {
@@ -11,35 +9,21 @@ class Directory extends React.Component {
     this.state = {
       sections: [
         {
-          title: 'hats',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          title: 'women’s',
+          imageUrl: 'https://i.ibb.co/5WcWgCC/banner-1.jpg',
           id: 1,
-          linkUrl: 'hats'
+          linkUrl: 'women'
         },
         {
-          title: 'jackets',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          title: 'men’s',
+          imageUrl: 'https://i.ibb.co/wdwrcp6/banner-2.jpg',
           id: 2,
           linkUrl: ''
         },
         {
-          title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          title: 'kid’s',
+          imageUrl: 'https://i.ibb.co/m628cZ8/banner-3.jpg',
           id: 3,
-          linkUrl: ''
-        },
-        {
-          title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-          size: 'large',
-          id: 4,
-          linkUrl: ''
-        },
-        {
-          title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-          size: 'large',
-          id: 5,
           linkUrl: ''
         }
       ]

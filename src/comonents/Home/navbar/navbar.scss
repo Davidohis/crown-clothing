@@ -1,0 +1,19 @@
+
+  input[type=search]:focus {
+    width: 100%;
+    border: 3px solid #ccc;
+  }
+  
+  input[type=search] {
+    width: fit-content;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(146, 143, 143);
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../../../assets/img/searchicon.png');
+    background-position: 15px 12px;
+    background-repeat: no-repeat;
+    padding: 17px 20px 17px 50px;
+  }

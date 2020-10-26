@@ -1,0 +1,59 @@
+
+/* Showcase */
+.showcase {
+    width: 100%;
+    height: 420px;
+    background:
+    url('../../../assets/img/banner.jpg') no-repeat center center/cover;
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    z-index: 999999;
+  }
+  
+  .showcase .showcase-box {
+    margin-left: 3rem;
+    align-items: flex-start;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 30rem;
+    padding: 3.5rem 2.6rem;
+  }
+  
+  .showcase-box h2 {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+  }
+  
+  .showcase-box p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  
+@media(max-width: 700px) {
+    .showcase .showcase-box {
+      margin-left: 0rem;
+      align-items: center;
+      max-width: 30rem;
+      padding: 3.5rem 2.6rem;
+    }
+    }
+    
+    @media(max-width: 500px) {
+      .showcase .showcase-box {
+        margin-left: 1rem;
+        max-width: 20rem;
+      }
+    }
+    @media(max-width: 320px) {
+      .showcase .showcase-box {
+        margin-left: .5rem;
+        max-width: 18rem;
+        padding: 3rem 2.6rem;
+      }
+    }
