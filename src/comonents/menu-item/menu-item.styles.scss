@@ -1,75 +1,86 @@
-.single-banner {
-  position: relative;
-  z-index: 1;
-  min-width: 25%;
-  height: 210px;
-  display: flex;
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 6px 15px;
-  overflow: hidden;
+.card-box {
+  padding-right: 18px;
+  max-width: 280px;
+  margin: auto;
+  text-align: start;
+  font-family: inherit;
+  padding-bottom: 1rem;
+  &:hover {
+     cursor: pointer;
+  }
 
-  
-  .background-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+
+& h3 {
+  font-size: 1.05rem;
+  color: rgb(14, 13, 13);
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-top: .6rem;
+ }
+
+& .title {
+  color: grey;
+  font-size: 1rem;
+ }
+
+& .price {
+  font-size: .9rem;
+  font-weight: 700;
+  padding-right: .5rem;
+ }
+
+& .price-1 {
+  font-size: .9rem;
+  color: rgb(71, 67, 67);
+  text-decoration: line-through;
+ }
+}
+
+.card-border {
+  border: .5px solid rgb(231, 227, 227);
+  box-shadow: 6px 0px 30px  rgba(240, 235, 235, 0.973);
+  padding:  .5rem;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.card-icon {
+  margin: 4px 0;
+  font-size: 1rem;
+
+  & .span-p {
+    padding-right: .5rem;
+  }
+
+ & a { 
+   padding-right: .5rem;
+   font-size: .9rem;
+   color: rgb(231, 152, 78);
   }
 }
 
-.single-banner:hover::before {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
+.card-btn {
+  border-radius: 4px;
+  outline: 0;
+  display: block;
+  margin-top: .7rem;
+  padding: 2px;
+  color: #fff;
+  background-color: rgba(231, 124, 24, 0.795);
+  text-align: center;
+  cursor: pointer;
+  width: 6rem;
+  font-size: 15px;
+  font-weight: 700;
 
-.single-banner::before {
-  position: absolute;
-  left: 35px;
-  top: 30px;
-  border: 13px solid #ffffff;
-  content: "";
-  opacity: 0.3;
-  width: calc(100% - 70px);
-  height: calc(100% - 60px);
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  & a {
+     text-decoration: none;
+     font-size: .9rem;
+     font-weight: 450;
+   }
 }
-
-.single-banner img {
-  min-width: 100%;
-}
-
-.single-banner .inner-text {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-  transition: all 0.2s linear;
-}
-
-.inner-text h4 {
-  color: #252525;
-  font-weight: 600;
-  padding: 11px 28px;
-  background: #ffffff;
-  border-radius: 2px;
-}
-
