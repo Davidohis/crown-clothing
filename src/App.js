@@ -6,7 +6,7 @@ import "./App.css";
 
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
-import Header from "./comonents/Home/header/header.component";
+import NavBar from './comonents/Home/navbar/navbar';
 
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 //import { auth } from "./firebase/firebase.utils";
@@ -15,7 +15,7 @@ function App(){
     return (
       <div>
         <BrowserRouter>
-          <Header />
+          <NavBar />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/shop" component={ShopPage} />

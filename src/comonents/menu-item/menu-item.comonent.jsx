@@ -20,8 +20,10 @@ const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => (
           <span>(22,423)</span>
        </div>
         <span className="price">$12.99</span>
-        <span className="price-1">$12.99</span>
-        <li className="card-btn"><a href="/">Bestseller</a></li>
+      <span className="price-1">$12.99</span>
+      <button className="card-btn"
+         onClick={() => history.push(`${match.url}${linkUrl}`)}
+      > Bestseller</button>
       </div>
      </div>
 );

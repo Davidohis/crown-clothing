@@ -1,12 +1,9 @@
 import React from 'react'
 import "./header.styles.scss";
-import NavBar from '../navbar/navbar';
 
 function Header() {
   return (
-    <div>
-     <NavBar />
-     <header className="showcase">
+    <header className="showcase">
        <main className="showcase-box">
          <h2>The language of now</h2>
          <p>
@@ -16,9 +13,8 @@ function Header() {
         <form>
           <input type="search" name="search" placeholder="What do you want to learn ?" />
         </form>
-      </main>
-      </header>
-    </div>
+       </main>
+     </header>
   )
 }
 

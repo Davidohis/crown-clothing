@@ -18,13 +18,13 @@ class Directory extends React.Component {
           title: 'Joe smite',
           imageUrl: 'https://i.ibb.co/wdwrcp6/banner-2.jpg',
           id: 2,
-          linkUrl: ''
+          linkUrl: 'men'
         },
         {
           title: 'Dave noon',
           imageUrl: 'https://i.ibb.co/m628cZ8/banner-3.jpg',
           id: 3,
-          linkUrl: ''
+          linkUrl: 'child'
         },
         {
           title: 'David moon',
