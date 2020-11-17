@@ -69,8 +69,8 @@
   border-radius: 4px;
   outline: 0;
   display: block;
-  margin-top: .7rem;
-  padding: 2px;
+  margin-top: .9rem;
+  padding: 2.5px;
   color: #fff;
   background-color: rgba(231, 124, 24, 0.795);
   text-align: center;
@@ -84,4 +84,8 @@
      font-size: .9rem;
      font-weight: 450;
    }
+}
+
+button {
+  border: none;
 }

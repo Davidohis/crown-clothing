@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import './navbar.scss'
-import Logo from '../../../assets/img/logo-coral.svg';
+import Logo from '../../../assets/img/logo.png';
 function NavBar() {
     return (
       <>
@@ -21,7 +21,7 @@ function NavBar() {
         <Nav>
           <Nav.Link href="/shop">Start Learning</Nav.Link>
           <Nav.Link href="/" className="mr-sm-3">
-            Teach on Udemy
+           start Teaching 
           </Nav.Link>
           <Button variant="outline-primary" className="mr-sm-2">
               Log in
