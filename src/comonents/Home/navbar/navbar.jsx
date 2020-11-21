@@ -21,7 +21,7 @@ function NavBar() {
         <Nav>
           <Nav.Link href="/shop">Start Learning</Nav.Link>
           <Nav.Link href="/" className="mr-sm-3">
-           start Teaching 
+           Start Teaching 
           </Nav.Link>
           <Button variant="outline-primary" className="mr-sm-2">
               Log in
