@@ -1,12 +1,12 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import './navbar.scss'
-import Logo from '../../../assets/img/logo.png';
+
 function NavBar() {
     return (
       <>
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-      <Navbar.Brand href="/"><img className="logo" src={Logo} alt="logo" /></Navbar.Brand>
+      <Navbar.Brand className="logo" href="/">Crwn<span>Clothing</span></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto mr-sm-3">
@@ -19,9 +19,9 @@ function NavBar() {
           </NavDropdown>
         </Nav>
         <Nav>
-          <Nav.Link href="/shop">Start Learning</Nav.Link>
+          <Nav.Link href="/shop">Shop Now</Nav.Link>
           <Nav.Link href="/" className="mr-sm-3">
-           Start Teaching 
+           View Items
           </Nav.Link>
           <Button variant="outline-primary" className="mr-sm-2">
               Log in

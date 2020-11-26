@@ -5,13 +5,13 @@ function Header() {
   return (
     <header className="showcase">
        <main className="showcase-box">
-         <h2>The language of now</h2>
+         <h2>Classic Clothing</h2>
          <p>
-          Learn new tech skills for Computer Learning <br />
-          Month from $12.99 — through Oct. 10.
+          Crwn clothing is an online fashion store with 
+          a sassy and irreverent style and attitude.
          </p>
         <form>
-          <input type="search" name="search" placeholder="What do you want to learn ?" />
+          <input type="search" name="search" placeholder="Search for items....." />
         </form>
        </main>
      </header>

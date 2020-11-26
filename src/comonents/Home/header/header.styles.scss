@@ -6,11 +6,10 @@
     background-image: url(../../../assets/img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top, center;
 
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
     z-index: 999999;
   }
@@ -26,21 +25,23 @@
   
   .showcase-box h2 {
     color: #000;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: .8rem;
   }
   
   .showcase-box p {
-    font-size: 1.2rem;
-    font-weight: 400;
+    color: rgb(221, 14, 48);
+    font-size: 1rem;
+    font-weight: 500;
     margin-bottom: 1.5rem;
   }
 
   /* Form section */
  input[type=search]:focus {
     width: 100%;
-    border: 3px solid #ccc;
+    border: 3px solid rgba(221, 14, 48, 0.376);
+    outline: none;
   }
   
   input[type=search] {

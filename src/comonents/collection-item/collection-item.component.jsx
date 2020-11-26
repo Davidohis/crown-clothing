@@ -4,7 +4,7 @@ import "./collection-item.styles.scss";
 const CollectionItem = ({ id, name, price, imageUrl }) => (
 <div className="card-box">
  <div className="card-border">
-    <img width="240" height="155" src={imageUrl} alt="John" className="card-image" />
+    <img width="auto" height="auto" src={imageUrl} alt="John" className="card-image" />
     <h3>The complete foundation stock trading course</h3>
     <p className="title">{name}</p>
     <div className="card-icon">
