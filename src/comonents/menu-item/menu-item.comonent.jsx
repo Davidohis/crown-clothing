@@ -7,23 +7,22 @@ const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => (
       onClick={() => history.push(`${match.url}${linkUrl}`)}
      >
      <div className="card-border">
-        <img width="240" height="155" src={imageUrl} alt="John" className="card-image" />
-        <h3>The complete foundation stock trading course</h3>
+        <img width="240" height="100" src={imageUrl} alt="John" className="card-image" />
         <p className="title">{title} , bloom team</p>
         <div className="card-icon">
           <span className="span-p">4.5</span>
-          <a href="/"><i class="fas fa-star"></i></a>
-          <a href="/"><i class="fas fa-star"></i></a>
-          <a href="/"><i class="fas fa-star"></i></a>
-          <a href="/"><i class="fas fa-star"></i></a>
-          <a href="/"><i class="far fa-star"></i></a>
+          <a href="/"><i className="fas fa-star"></i></a>
+          <a href="/"><i className="fas fa-star"></i></a>
+          <a href="/"><i className="fas fa-star"></i></a>
+          <a href="/"><i className="fas fa-star"></i></a>
+          <a href="/"><i className="far fa-star"></i></a>
           <span>(22,423)</span>
        </div>
         <span className="price">$12.99</span>
       <span className="price-1">$12.99</span>
       <button className="card-btn"
          onClick={() => history.push(`${match.url}${linkUrl}`)}
-      > Bestseller</button>
+      > Shop Now</button>
       </div>
      </div>
 );

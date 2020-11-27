@@ -5,7 +5,7 @@ import './navbar.scss'
 function NavBar() {
     return (
       <>
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+<Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Navbar.Brand className="logo" href="/">Crwn<span>Clothing</span></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
