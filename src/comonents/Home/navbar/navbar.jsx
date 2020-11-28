@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
 import './navbar.scss'
 
 function NavBar() {
@@ -23,10 +23,10 @@ function NavBar() {
           <Nav.Link href="/" className="mr-sm-3">
            View Items
           </Nav.Link>
-          <Button variant="outline-primary" className="mr-sm-2">
+          <Button href="/signin" variant="outline-danger" className="mr-sm-2">
               Log in
           </Button>
-          <Button variant="primary">Sign up</Button>
+          <Button href="/signin" variant="outline-primary">Sign up</Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

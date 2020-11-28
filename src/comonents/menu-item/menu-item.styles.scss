@@ -11,7 +11,8 @@
   }
 
 & .title {
-  color: grey;
+  color: #706c6c;
+  font-weight: 500;
   font-size: 1rem;
  }
 
@@ -19,6 +20,7 @@
   font-size: .9rem;
   font-weight: 700;
   padding-right: .5rem;
+  color: rgb(66, 64, 64);
  }
 
 & .price-1 {
@@ -47,6 +49,7 @@
 
   & .span-p {
     padding-right: .5rem;
+    color: rgb(66, 64, 64);
   }
 
  & a { 

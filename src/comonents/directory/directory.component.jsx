@@ -9,28 +9,28 @@ class Directory extends React.Component {
     this.state = {
       sections: [
         {
-          title: 'Brown Brim',
-          imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+          title: 'Green Beanie',
+          imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
           id: 1,
           linkUrl: 'shop/hats'
         },
         {
-          title: 'Joe smite',
-          imageUrl: 'https://i.ibb.co/wdwrcp6/banner-2.jpg',
+          title: 'Adidas NMD',
+          imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
           id: 2,
+          linkUrl: 'shop/sneakers'
+        },
+        {
+          title: "Black Jean Shearling",
+          imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+          id: 3,
           linkUrl: 'shop/jackets'
         },
         {
-          title: "Women's Wear",
-          imageUrl: 'https://i.ibb.co/m628cZ8/banner-3.jpg',
-          id: 3,
+          title: "Floral Blouse",
+          imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
+          id: 4,
           linkUrl: 'shop/womens'
-        },
-        {
-          title: "Men's Wear",
-          imageUrl: 'https://i.ibb.co/m628cZ8/banner-3.jpg',
-          id: 3,
-          linkUrl: 'shop/mens'
         }
       ]
     };

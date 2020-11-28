@@ -7,8 +7,8 @@ const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => (
       onClick={() => history.push(`${match.url}${linkUrl}`)}
      >
      <div className="card-border">
-        <img width="240" height="100" src={imageUrl} alt="John" className="card-image" />
-        <p className="title">{title} , bloom team</p>
+        <img width="250" height="100" src={imageUrl} alt="John" className="card-image" />
+        <p className="title">{title}</p>
         <div className="card-icon">
           <span className="span-p">4.5</span>
           <a href="/"><i className="fas fa-star"></i></a>
