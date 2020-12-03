@@ -15,7 +15,7 @@ function NavBar() {
             <NavDropdown.Item href="/">Another action</NavDropdown.Item>
             <NavDropdown.Item href="/">Something</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="/">Separated link</NavDropdown.Item>
+            <NavDropdown.Item href="/">more items</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Nav>
