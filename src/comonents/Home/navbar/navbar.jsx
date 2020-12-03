@@ -13,7 +13,7 @@ function NavBar() {
           <NavDropdown title="Categories" id="collasible-nav-dropdown">
             <NavDropdown.Item href="/">Action</NavDropdown.Item>
             <NavDropdown.Item href="/">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="/">Something</NavDropdown.Item>
+            <NavDropdown.Item href="/">more items</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="/">more items</NavDropdown.Item>
           </NavDropdown>
