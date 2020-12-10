@@ -5,9 +5,12 @@
   text-align: start;
   font-family: inherit;
   padding-bottom: 1rem;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 0px 0.5px rgba(gray, 0.5);
 
   &:hover {
      cursor: pointer;
+     transform: translateY(20px);
   }
 
 & .title {
@@ -72,15 +75,14 @@ span {
   color: #fff;
   background-color: rgba(231, 124, 24, 0.795);
   text-align: center;
-  cursor: pointer;
   width: 6rem;
   font-size: 15px;
   font-weight: 700;
+  transition: all 0.2s ease-in;
 
-  & a {
-     text-decoration: none;
-     font-size: .9rem;
-     font-weight: 450;
+   &:hover {
+    background-color: red;
+    cursor: pointer;   
    }
 }
 

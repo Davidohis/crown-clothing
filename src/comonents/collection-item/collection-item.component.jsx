@@ -16,8 +16,10 @@ const CollectionItem = ({ id, name, price, imageUrl }) => (
       <span>(22,423)</span>
    </div>
     <span className="price">${price}</span>
-    <span className="price-1">${price}</span>
-    <li className="card-btn"><a href="/">Shop Now</a></li>
+    <span className="price-1">${price}</span> 
+    <button className="card-btn"> 
+       Shop Now
+    </button>
   </div>
  </div>
 );
