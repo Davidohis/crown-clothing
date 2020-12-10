@@ -9,9 +9,25 @@ import ShopPage from "./pages/shop/shop.component";
 import NavBar from './comonents/Home/navbar/navbar';
 
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-//import { auth } from "./firebase/firebase.utils";
+import { auth } from "./firebase/firebase.utils";
 
-function App(){
+class App extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            currentUser: null
+        }
+    }
+   
+    componentDidMount() {
+        auth.onAuthStateChanged(user => {
+            this.setState({ currentUser: user });
+
+            console.log(user)
+        })
+    }
+   render(){  
     return (
       <div>
         <BrowserRouter>
@@ -24,6 +40,7 @@ function App(){
         </BrowserRouter>
       </div>
     );
+   }
 }
 
 export default App;
