@@ -1,8 +1,9 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
-import './navbar.scss'
+import './navbar.scss';
+import { auth } from '../../../firebase/firebase.utils';
 
-function NavBar() {
+function NavBar({ currentUser }) {
     return (
       <>
 <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
@@ -23,10 +24,18 @@ function NavBar() {
           <Nav.Link href="/" className="mr-sm-3">
            View Items
           </Nav.Link>
-          <Button href="/signin" variant="outline-danger" className="mr-sm-2">
-              Log in
-          </Button>
-          <Button href="/signin" variant="outline-primary">Sign up</Button>
+          {
+            currentUser ?
+            <Button variant="outline-primary"
+              onClick={() => auth.signOut()}>
+                Sign out
+            </Button>
+            :
+            <Button href="/signin" variant="outline-danger" className="mr-sm-2">
+              Sign in
+            </Button>
+          }
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>
