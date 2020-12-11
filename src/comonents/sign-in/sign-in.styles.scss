@@ -1,9 +1,19 @@
 .sign-in {
-    width: 30vw;
+    margin-top: 3rem;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     padding-left: 4rem;
+
+    & h2 {
+        color: #000;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+    }
   }
-  .form .btn-flex {
-    display: flex;
+
+  .buttons {
+      display: flex;
+      justify-content: space-between;
   }
