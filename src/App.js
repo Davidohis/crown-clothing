@@ -16,7 +16,7 @@ class App extends React.Component {
         super();
 
         this.state = {
-            currentUser: null
+            currentUser: null;
         }
     }
    
@@ -25,8 +25,6 @@ class App extends React.Component {
     componentDidMount() {
       this.unsubscribeFromAuth =  auth.onAuthStateChanged(user => {
             this.setState({ currentUser: user });
-
-            console.log(user)
         })
     }
 
