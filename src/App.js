@@ -9,22 +9,23 @@ import ShopPage from "./pages/shop/shop.component";
 import NavBar from './comonents/Home/navbar/navbar';
 
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-import { auth } from "./firebase/firebase.utils";
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
 class App extends React.Component {
     constructor() {
         super();
 
         this.state = {
-            currentUser: null;
+            currentUser: null
         }
     }
    
     unsubscribeFromAuth = null;
 
     componentDidMount() {
-      this.unsubscribeFromAuth =  auth.onAuthStateChanged(user => {
-            this.setState({ currentUser: user });
+      this.unsubscribeFromAuth =  auth.onAuthStateChanged(async user => {
+            createUserProfileDocument(user)
+
         })
     }
 

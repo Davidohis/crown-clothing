@@ -15,6 +15,8 @@ const config = {
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if(!userAuth) return;
+
+    console.log(firebase.doc('users/128qwert'))
 }
 
 firebase.initializeApp(config);
