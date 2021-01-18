@@ -57,7 +57,7 @@ Currently,
 - run npm run start then navigate to localhost:3000 on browser
 
 # Screenshots
-<img width="1429" alt="Screenshot" src="">
+<img width="1429" alt="Screenshot" src="Snapshot_21-01-18_07-18-30.png">
 
 # Author
 David Igheose
