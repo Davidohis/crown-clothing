@@ -1,23 +1,63 @@
-###  Platform Under Construction
+## Platform Under Construction
 
-# Getting Started with Create React App  (E-clothing Platform)
+### React Application for Ecommerce, an e-clothing platform 
 
-## what to do first
+# Description
+Crown-clothing is an online fashion store, handmade and craft products, organic produce and much more.
 
-### `npm install`
 
-### `npm start`
+# Table of Contents
+<ul>
+            <li>
+                <a href="#Technologies">Technologies</a>
+            </li>
+            <li>
+                <a href="#Features">Features</a>
+            </li>
+          <li>
+                <a href="#Installations">Installation</a>
+            </li>
+        </ul>
+        
+# Technologies
+Currently,
+  <ul>
+        <li>React </li>
+        <li>Cascade Style Sheet (CSS) / Sass</li>
+        <li>React Bootstrap</li>
+        <li>Redux</li>
+        <li>React Router</li>
+        <li>Firebase</li>
+  </ul>
+  Coming soon,
+   <ul>
+     <li>Stripe Payments</li>
+     <li>Styled-components</li>
+     <li>Jest Testing </li>
+   </ul>
+  
+# Features
+Currently,
+   <ul>
+        <li>Users Sign up</li>
+        <li>Users Sign In</li>
+   </ul>
+  Coming soon,
+   <ul>
+     <li>Shopping Cart</li>
+     <li>Payment gateway </li>
+     <li>Mobile Support / Progressive Web App</li>
+     <li>Firebase Security</li>
+   </ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
+- clone repo
+- npm install
+- npm run build
+- run npm run start then navigate to localhost:3000 on browser
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Screenshots
+<img width="1429" alt="Screenshot" src="">
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm build`
-
+# Author
+David Igheose
